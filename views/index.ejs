@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="forum-app">
+    <head>
+        <% include ../views/partials/head %>
+        <base href="/">
+    </head>
+    <body id="application">
+    <div id="wrap">
+        <div id="main">  
+            <% include ../views/partials/header %>
+            <ui-view></ui-view>
+        </div>
+    </div><!-- end wrap -->
+    <% include ../views/partials/footer %>
+    
+    <script src="/components/angular/angular.min.js"></script>
+    <script src="/components/angular-messages/angular-messages.min.js"></script>
+    <script src="/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/javascripts/lib/slugify/slugify.js"></script>
+    <script src="/components/angular-confirm-modal/angular-confirm.min.js"></script>
+    <script src="/components/angular-timeago/dist/angular-timeago.min.js"></script>
+    
+    <script src="/javascripts/angularapp.js"></script>
+    <script src="/javascripts/lib/services.js"></script>
+    <script src="/javascripts/lib/filters.js"></script>
+    <script src="/javascripts/lib/modules.js"></script>
+    <script src="/javascripts/controllers/navbar.js"></script>
+    
+    <script src="/javascripts/controllers/allcategories.js"></script>
+    <script src="/javascripts/controllers/addcategory.js"></script>
+    <script src="/javascripts/controllers/viewcategory.js"></script>
+    <script src="/javascripts/controllers/viewcategoryslug.js"></script>
+    <script src="/javascripts/controllers/deletecategory.js"></script>
+    <script src="/javascripts/controllers/recentposts.js"></script>
+    <script src="/javascripts/controllers/addpost.js"></script>
+    <script src="/javascripts/controllers/viewpost.js"></script>
+    <script src="/javascripts/controllers/deletepost.js"></script>
+    <script src="/javascripts/controllers/closepost.js"></script>
+    <script src="/javascripts/controllers/openpost.js"></script>
+    <script src="/javascripts/controllers/editpost.js"></script>
+    <script src="/javascripts/controllers/auth.js"></script>
+    <script src="/javascripts/controllers/user-profile.js"></script>
+  </body>
+</html>

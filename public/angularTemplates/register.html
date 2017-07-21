@@ -1,0 +1,69 @@
+    <!-- HANDLE USER MESSAGES -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="user-message" ng-show="userMessage !=''">
+                    <button class="btn hide-message-btn" ng-click="hideMessage()"><i class="fa fa-times"></i></button>
+                    <p>{{userMessage}}</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- HANDLE SERVER ERRORS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="user-message warning" ng-show="serversideError !=''">
+                    <p>{{serversideError}}</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTRATION FORM -->
+    <div id="form-container">
+        <div class="container">
+            <div class="row">
+                <form name="registerform" ng-submit="register()" novalidate >
+                    <div class="col-md-offset-4 col-sm-offset-3 col-md-4 col-sm-6">
+                        <h1 class="page-title">Create an Account</h1>
+                        <div class="user-message note">Creating an account is completely free. You must be logged in to participate in discussion or make posts.</div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" ng-model="user.email" name="email" required/>
+                            <div class="error-container" ng-messages="registerform.email.$error" ng-if="registerform.email.$touched">
+                                <p ng-message="required">Your Email is required.</p>
+                                <p ng-message="email">Not valid email!</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" ng-model="user.username" name="username" required/>
+                            <div class="error-container" ng-messages="registerform.username.$error" ng-if="registerform.username.$touched">
+                                <p ng-message="required">Your username is required.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" ng-model="user.password" name="password" required ng-minlength="6" />
+                            <div class="error-container" ng-messages="registerform.password.$error" ng-if="registerform.password.$touched">
+                                <p ng-message="required">Your password is required.</p>
+                                <p ng-message="minlength">Your password must be at least 6 characters long.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" class="form-control" ng-model="user.confirmpassword" name="confirmpassword" required confirm-pwd="user.password" />
+                            <div class="error-container" ng-messages="registerform.confirmpassword.$error" ng-if="registerform.confirmpassword.$touched">
+                                <p ng-message="required">You must confirm your password.</p>
+                                <p ng-message="password">You must confirm your password.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary add-margin-bottom" type="submit" ng-disabled="registerform.$invalid"><i class="fa fa-plus-circle"></i> Register</button>
+                        <div class="user-message standard">
+                            Already have an account? <a href="/login">Log In</a>
+                        </div>
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div>
