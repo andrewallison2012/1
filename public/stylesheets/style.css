@@ -4,11 +4,11 @@ html, body { height: 100%;}
 body{font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; padding-top:0px;}
 #wrap { min-height: 100%;}
 #main { overflow:auto; padding-bottom:100px; /* this needs to be bigger than footer height*/}
-#footer {padding:20px 0px; background-color: #077CB6; color:#fff;}
+#footer {padding:20px 0px; background-color: #375a7f;; color:#fff;}
 .footer {position: relative; margin-top: -60px; /* negative value of footer height */ height: 60px; clear:both; padding-top:20px;} 
 
 /*Navbar Customization*/
-.navbar-default{background:#077CB6;}
+.navbar-default{background:#375a7f;;}
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color:#fff; text-decoration: none;}
 #mainmenu .navbar-nav>li>a{transition: all .3s; color:#efefef;}
 #mainmenu .navbar-nav>li>a:hover{background:#fff; color:#000;}
@@ -28,7 +28,7 @@ h1.page-title a{color:#000;}
 .add-top-bottom{margin-top:10px;}
 
 /* View Table Styles */
-.table-heading{background:#D8EDF6; border:1px solid #BDDDEB; border-right:0px;}
+.table-heading{background:#DDD; border:1px solid #BDDDEB; border-right:0px;}
 .table-heading:last-child{border-right:1px solid #BDDDEB; text-align: right;}
 .table-heading p{ margin:0px; padding-top: 10px; padding-bottom: 10px; cursor: pointer;}
 .table-heading .fa{color:#8DCBE6;}
@@ -64,7 +64,7 @@ h1.page-title a{color:#000;}
 p.category-description{font-size:12px; color:#666; padding-top:3px;}
 
 /* Button Styles */
-.btn-primary{background:#077CB6;}
+.btn-primary{background:#375a7f;;}
 .button-container{margin-top:20px;}
 .upvote-button .fa, .downvote-button .fa{ color:#bbb; cursor:pointer;}
 .hide-message-btn{float:right; margin-top:-10px; background:#9FE39F;}
@@ -95,7 +95,7 @@ p.category-description{font-size:12px; color:#666; padding-top:3px;}
 
 
 /* Admin Toolbar */
-.admin-toolbar{background:#555; margin-bottom:10px;}
+.admin-toolbar{background:#e45151; margin-bottom:10px;}
 .admin-toolbar a{text-decoration:none; color:#ccc; display: inline-block; padding:10px; float:right; border-left:1px solid #444; border-right:#666; transition: all .3s;}
 .admin-toolbar a:hover{color:#fff; background:#444;}
 .admin-toolbar a:active{background:#222;}
